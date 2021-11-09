@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
+import Image from "next/image";
 import { getAllFilesMetadata } from "@/lib/mdx";
 
 export default function Home({ posts }) {
@@ -18,7 +19,7 @@ export default function Home({ posts }) {
         ></link>
       </Head>
 
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center dark:bg-green-300 bg-pink-300">
         <h1 className="text-6xl font-bold">Blog next</h1>
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
@@ -45,7 +46,13 @@ export default function Home({ posts }) {
           rel="noopener noreferrer"
         >
           Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
+          <Image
+            width={50}
+            height={50}
+            src="/vercel.svg"
+            alt="Vercel Logo"
+            className="h-4 ml-2"
+          />
         </a>
       </footer>
     </div>
