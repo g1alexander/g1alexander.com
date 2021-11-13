@@ -1,7 +1,25 @@
 {
-  "name": "next-pwa-tutorial",
+  "name": "g1alexander",
   "version": "0.1.0",
+  "description": "Portfolio for professional projects by g1alexander",
   "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawaydigital/g1alexander.com.git"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "tailwind",
+    "tailwindcss",
+    "vercel"
+  ],
+  "author": "Alexander Granados (https://g1alexander.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pawaydigital/g1alexander.com/issues"
+  },
+  "homepage": "https://github.com/pawaydigital/g1alexander.com#readme",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
