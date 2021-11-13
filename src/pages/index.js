@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { getAllFilesMetadata } from "@/lib/mdx";
 import HeadComponent from "@/components/Head";
+import Icon from "@mdi/react";
+import { mdiAccount } from "@mdi/js";
 
 export default function Home({ blog, projects }) {
   return (
@@ -9,7 +11,17 @@ export default function Home({ blog, projects }) {
       <HeadComponent />
 
       <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center dark:bg-green-300 bg-pink-300">
-        <h1 className="text-6xl font-bold">Blog next</h1>
+        <h1 className="text-6xl font-bold">
+          Blog next
+          <Icon
+            path={mdiAccount}
+            size={1}
+            horizontal
+            vertical
+            rotate={90}
+            color="red"
+          />
+        </h1>
 
         <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
           {blog.map((blog) => (
