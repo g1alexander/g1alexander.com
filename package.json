@@ -25,7 +25,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "postinstall": "husky install"
+    "pre-commit": "next lint --fix && git add -A ."
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
