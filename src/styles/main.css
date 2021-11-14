@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap");
+
+@import url("./code.css");
+
+html,
+body {
+  font-family: "Quicksand", "sans-serif";
+}
+
+html::-webkit-scrollbar,
+html::-webkit-scrollbar-thumb {
+  width: 0px;
+}
+
+.h-90vh {
+  height: 90vh;
+}
+
+.h-2px {
+  height: 1px;
+}
