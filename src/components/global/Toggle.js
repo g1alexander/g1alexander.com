@@ -14,11 +14,19 @@ export function Toggle() {
     <>
       {state ? (
         <button onClick={handleDarkMode}>
-          <Icon path={mdiWhiteBalanceSunny} size={1} color="blue" />
+          <Icon
+            path={mdiWhiteBalanceSunny}
+            size={1.1}
+            className="text-green-800 dark:text-green-300"
+          />
         </button>
       ) : (
         <button onClick={handleDarkMode}>
-          <Icon path={mdiWeatherNight} size={1} color="red" />
+          <Icon
+            path={mdiWeatherNight}
+            size={1.1}
+            className="text-green-800 dark:text-green-300"
+          />
         </button>
       )}
     </>

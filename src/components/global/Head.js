@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function HeadComponent({ frontmatter }) {
+export function HeadComponent({ frontmatter }) {
   return (
     <Head>
       <title>

@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.active-link {
+  @apply text-green-500 dark:text-green-500;
+}
