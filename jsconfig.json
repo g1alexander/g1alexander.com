@@ -5,7 +5,8 @@
       "@/components/*": ["src/components/*"],
       "@/lib/*": ["lib/*"],
       "@/styles/*": ["src/styles/*"],
-      "@/static/*": ["src/static/*"]
+      "@/static/*": ["src/static/*"],
+      "@/hooks/*": ["src/hooks/*"]
     }
   },
   "exclude": ["node_modules", "lib", "components", "styles"]
