@@ -6,7 +6,7 @@ export default function Home({ blog, projects }) {
     <>
       <HeadComponent />
 
-      <main className="flex-grow">fgdf</main>
+      <main>fgdf</main>
     </>
   );
 }
