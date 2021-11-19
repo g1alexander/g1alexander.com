@@ -6,7 +6,8 @@
       "@/lib/*": ["lib/*"],
       "@/styles/*": ["src/styles/*"],
       "@/static/*": ["src/static/*"],
-      "@/hooks/*": ["src/hooks/*"]
+      "@/hooks/*": ["src/hooks/*"],
+      "@/utils/*": ["src/utils/*"]
     }
   },
   "exclude": ["node_modules", "lib", "components", "styles"]

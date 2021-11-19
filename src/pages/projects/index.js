@@ -1,7 +1,7 @@
 export default function Projects() {
   return (
     <>
-      <h1>proyectos</h1>
+      <main className="flex-grow">proyectos</main>
     </>
   );
 }
