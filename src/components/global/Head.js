@@ -58,6 +58,11 @@ export function HeadComponent({ frontmatter }) {
         content="Alexander Granados 👨🏼&zwj;💻 | Desarrollador Web"
       />
       <meta property="og:image:type" content="image/webp" />
+
+      <meta
+        name="google-site-verification"
+        content="ebs9aewz121lf073Ec1gv0CYbAAuQvftrDXOQ100cpI"
+      />
     </Head>
   );
 }
