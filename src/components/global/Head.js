@@ -57,7 +57,7 @@ export function HeadComponent({ frontmatter }) {
         property="og:image:alt"
         content="Alexander Granados 👨🏼&zwj;💻 | Desarrollador Web"
       />
-      <meta property="og:image:type" content="image/jpeg" />
+      <meta property="og:image:type" content="image/webp" />
     </Head>
   );
 }
