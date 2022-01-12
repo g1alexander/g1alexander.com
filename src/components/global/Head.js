@@ -49,12 +49,17 @@ export function HeadComponent({ frontmatter }) {
         name="image"
         property="og:image"
         content="https://res.cloudinary.com/dlgvxohur/image/upload/v1627483439/proyectos/g1alexander.webp"
+      ></meta>
+      {/* <meta
+        name="image"
+        property="og:image"
+        content="https://res.cloudinary.com/dlgvxohur/image/upload/v1627483439/proyectos/g1alexander.webp"
       />
       <meta
         name="image"
         property="og:image"
         content="https://res.cloudinary.com/dlgvxohur/image/upload/v1627483439/proyectos/g1alexander.webp"
-      />
+      /> */}
       <meta
         property="og:image:alt"
         content="Alexander Granados 👨🏼&zwj;💻 | Desarrollador Web"
