@@ -1,7 +1,6 @@
 import Head from "next/head";
 
 export function HeadComponent({ frontmatter }) {
-  //TODO: cambiar la image de la linea 22 y 36
   return (
     <Head>
       <title>
@@ -23,7 +22,7 @@ export function HeadComponent({ frontmatter }) {
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:creator" content="@g1alexander" />
       <meta name="twitter:domain" content="g1alexander.com" />
-      <meta name="twitter:site" content="@g1alexander" />
+      <meta name="twitter:site" content="@g1alexander_" />
       <meta
         name="twitter:title"
         content="Alexander Granados 👨🏼&zwj;💻 | Desarrollador Web"
@@ -45,11 +44,14 @@ export function HeadComponent({ frontmatter }) {
         content="Portfolio and blog website by g1alexander | Alexander Granados"
       />
       <meta property="og:site_name" content="g1alexander.com" />
+      <meta name="author" content="Alexander Granados" />
       <meta
+        name="image"
         property="og:image"
         content="https://res.cloudinary.com/dlgvxohur/image/upload/v1627483439/proyectos/g1alexander.webp"
       />
       <meta
+        name="image"
         property="og:image"
         content="https://res.cloudinary.com/dlgvxohur/image/upload/v1627483439/proyectos/g1alexander.webp"
       />
