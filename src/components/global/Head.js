@@ -48,23 +48,18 @@ export function HeadComponent({ frontmatter }) {
       <meta
         name="image"
         property="og:image"
-        content="https://res.cloudinary.com/dlgvxohur/image/upload/v1627483439/proyectos/g1alexander.webp"
-      ></meta>
-      {/* <meta
-        name="image"
-        property="og:image"
-        content="https://res.cloudinary.com/dlgvxohur/image/upload/v1627483439/proyectos/g1alexander.webp"
+        content="https://res.cloudinary.com/dlgvxohur/image/upload/v1641951749/proyectos/g1alexander.jpg"
       />
       <meta
         name="image"
         property="og:image"
-        content="https://res.cloudinary.com/dlgvxohur/image/upload/v1627483439/proyectos/g1alexander.webp"
-      /> */}
+        content="https://res.cloudinary.com/dlgvxohur/image/upload/v1641951749/proyectos/g1alexander.jpg"
+      />
       <meta
         property="og:image:alt"
         content="Alexander Granados 👨🏼&zwj;💻 | Desarrollador Web"
       />
-      <meta property="og:image:type" content="image/webp" />
+      <meta property="og:image:type" content="image/jpeg" />
 
       <meta
         name="google-site-verification"
