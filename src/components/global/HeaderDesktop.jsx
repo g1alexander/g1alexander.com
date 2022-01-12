@@ -1,65 +1,76 @@
-import { mdiLaptop } from "@mdi/js";
-import Icon from "@mdi/react";
 import Link from "next/link";
+import Image from "next/image";
 import { useRouter } from "next/router";
-import { Toggle } from "@/components/global/Toggle";
+import Logo from "@/static/logo.svg";
+import Icon from "@mdi/react";
+import { getSocialMedia } from "@/utils/getSocialMedia";
 
 export function HeaderDesktop() {
   const { pathname } = useRouter();
+  const socialMedia = getSocialMedia();
 
   return (
-    <header className="container mx-auto flex justify-between px-5 py-5">
-      <div className="flex">
-        <Icon
-          path={mdiLaptop}
-          size={1.1}
-          className="text-green-800 dark:text-green-300 mr-5"
-        />
-        <Toggle />
+    <>
+      <div className="bg-white-300 h-12 ">
+        <section className="container mx-auto flex justify-between items-center h-full px-5">
+          <span></span>
+          <ul>
+            <li className="flex">
+              {socialMedia.map(({ id, link, icon, color }) => (
+                <a key={id} href={link} target="_blank" rel="noreferrer">
+                  <Icon
+                    path={icon}
+                    size={1}
+                    className={`${
+                      color === 800 ? "text-white-800" : "text-white-600"
+                    } mx-2`}
+                  />
+                </a>
+              ))}
+            </li>
+          </ul>
+        </section>
       </div>
-      <nav className="font-bold">
-        <ul className="flex">
-          <li className="mr-5">
-            <Link href="/">
-              <a
-                className={
-                  pathname === "/"
-                    ? "text-green-800 dark:text-green-300"
-                    : "active-link"
-                }
-              >
-                Inicio
-              </a>
-            </Link>
-          </li>
-          <li className="mr-5">
-            <Link href="/projects">
-              <a
-                className={
-                  pathname === "/projects"
-                    ? "text-green-800 dark:text-green-300"
-                    : "active-link"
-                }
-              >
-                Proyectos
-              </a>
-            </Link>
-          </li>
-          <li className="mr-5">
-            <Link href="/blog">
-              <a
-                className={
-                  pathname === "/blog"
-                    ? "text-green-800 dark:text-green-300"
-                    : "active-link"
-                }
-              >
-                Blog
-              </a>
-            </Link>
-          </li>
-        </ul>
-      </nav>
-    </header>
+      <header className="container mx-auto flex justify-between items-center px-5 py-5">
+        <div className="flex">
+          <Image src={Logo} width={50} height={50} alt="g1alexander" />
+        </div>
+        <nav>
+          <ul className="flex">
+            <li className="mr-5">
+              <Link href="/">
+                <a
+                  className={pathname === "/" ? "text-blue-500" : "active-link"}
+                >
+                  Inicio
+                </a>
+              </Link>
+            </li>
+            <li className="mr-5">
+              <Link href="/sobre-mi">
+                <a
+                  className={
+                    pathname === "/sobre-mi" ? "text-blue-500" : "active-link"
+                  }
+                >
+                  Sobre mí
+                </a>
+              </Link>
+            </li>
+            <li className="mr-3">
+              <Link href="/blog">
+                <a
+                  className={
+                    pathname === "/blog" ? "text-blue-500" : "active-link"
+                  }
+                >
+                  Blog
+                </a>
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </>
   );
 }

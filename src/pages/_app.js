@@ -6,7 +6,7 @@ import { Footer } from "@/components/global/Footer";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="bg-green-300 dark:bg-green-800">
+    <div className="bg-white">
       <NextNProgress color="#0333FF" />
 
       <Header />
