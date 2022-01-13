@@ -22,6 +22,12 @@ module.exports = {
         blue: {
           500: "#0333FF",
         },
+        social: {
+          linkedin: "#0A66C2",
+          github: "#181717",
+          instagram: "#E4405F",
+          twitter: "#1DA1F2",
+        },
       },
     },
     screens: {

@@ -16,13 +16,23 @@ export function HeaderDesktop() {
           <span></span>
           <ul>
             <li className="flex">
-              {socialMedia.map(({ id, link, icon, color }) => (
+              {socialMedia.map(({ id, link, icon, color, name }) => (
                 <a key={id} href={link} target="_blank" rel="noreferrer">
                   <Icon
                     path={icon}
                     size={1}
                     className={`${
                       color === 800 ? "text-white-800" : "text-white-600"
+                    } ${
+                      name === "LinkedIn"
+                        ? "hover:text-social-linkedin"
+                        : name === "Github"
+                        ? "hover:text-social-github"
+                        : name === "Twitter"
+                        ? "hover:text-social-twitter"
+                        : name === "Instagram"
+                        ? "hover:text-social-instagram"
+                        : ""
                     } mx-2`}
                   />
                 </a>
