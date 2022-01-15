@@ -41,7 +41,7 @@ export function HeaderDesktop() {
           </ul>
         </section>
       </div>
-      <header className="container mx-auto flex justify-between items-center px-5 py-5">
+      <header className="container mx-auto flex justify-between items-center px-5 pt-5">
         <div className="flex">
           <Image src={Logo} width={50} height={50} alt="g1alexander" />
         </div>
