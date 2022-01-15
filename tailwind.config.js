@@ -28,6 +28,10 @@ module.exports = {
           instagram: "#E4405F",
           twitter: "#1DA1F2",
         },
+        tech: {
+          vue: "#4FC08D",
+          react: "#61DAFB",
+        },
       },
     },
     screens: {
