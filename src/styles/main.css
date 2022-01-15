@@ -51,7 +51,7 @@ html::-webkit-scrollbar-track:active {
   white-space: nowrap;
   border-right: 1px solid #030303;
   width: 9.5ch;
-  animation: typing 4.5s steps(12) infinite;
+  animation: typing 4.5s steps(14) infinite;
   overflow: hidden;
 }
 
