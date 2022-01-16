@@ -7,27 +7,34 @@ export function Info({ data }) {
         <div className="w-1/5">
           <h4>{ubication}</h4>
           <span className="text-white-700">
-            {date.start} - <span className="text-blue-500">{date.end}</span>
+            {date.start} -{" "}
+            <span className={`${reason.text && "text-blue-500"}`}>
+              {date.end}
+            </span>
           </span>
         </div>
         <div className="text-center w-1/5">
-          <Image
-            alt={title.company}
-            src={img}
-            width={70}
-            height={70}
-            className={`rounded-full ${
-              reason.border ? "bg-blue-500" : "bg-white-700"
+          <div
+            className={`border-personal mx-auto py-1 ${
+              reason.border ? "border-color-blue" : "border-color-gray"
             }`}
-          ></Image>
+          >
+            <Image
+              alt={title.company}
+              src={img}
+              width={70}
+              height={70}
+              className="rounded-full"
+            ></Image>
+          </div>
 
           {reason.hr && <hr className="w-1 border-0 border-l-2 h-28 mx-auto" />}
         </div>
-        <div className="">
+        <div className="w-11/12">
           <h3 className="font-semibold text-lg mb-2">
             {title.rol} -{" "}
             <a
-              className="text-blue-500"
+              className="text-blue-500 hover:underline"
               href={title.companyLink}
               rel="noopener noreferrer"
               target="_blank"

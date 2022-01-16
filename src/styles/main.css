@@ -60,3 +60,16 @@ html::-webkit-scrollbar-track:active {
     width: 0;
   }
 }
+
+.border-personal {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.border-color-blue {
+  border: 1px solid #0333ff;
+}
+.border-color-gray {
+  border: 1px solid #e5e7eb;
+}
