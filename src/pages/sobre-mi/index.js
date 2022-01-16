@@ -1,7 +1,7 @@
 import { Skills } from "@/components/global/Skills";
 import { Info } from "@/components/sobre-mi/Info";
 import { skills, tools } from "@/utils/getSkills";
-import { exp } from "@/utils/getInfo";
+import { exp, education } from "@/utils/getInfo";
 
 export default function SobreMi() {
   return (
@@ -45,7 +45,7 @@ export default function SobreMi() {
 
       <section className="mb-12">
         <h2 className="text-xl font-bold my-6">Educación 📚</h2>
-        {/* components que servira para exp como educacion */}
+        <Info data={education} />
       </section>
     </div>
   );
