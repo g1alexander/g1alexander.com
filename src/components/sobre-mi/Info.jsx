@@ -7,7 +7,7 @@ export function Info({ data }) {
         <div className="w-1/5">
           <h4>{ubication}</h4>
           <span className="text-white-700">
-            {date.start} -{" "}
+            {date.start} {date.start && "-"}{" "}
             <span className={`${reason.text && "text-blue-500"}`}>
               {date.end}
             </span>
@@ -32,7 +32,7 @@ export function Info({ data }) {
         </div>
         <div className="w-11/12">
           <h3 className="font-semibold text-lg mb-2">
-            {title.rol} -{" "}
+            {title.rol} {title.company && "-"}{" "}
             <a
               className="text-blue-500 hover:underline"
               href={title.companyLink}
