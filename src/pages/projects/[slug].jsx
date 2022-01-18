@@ -2,13 +2,21 @@ import { MDXRemote } from "next-mdx-remote";
 import { getFileBySlug, getFiles } from "@/lib/mdx";
 import { HeadComponent } from "@/components/global/Head";
 import MDXComponents from "@/components/md/MDXComponent";
+import Script from "next/script";
 
 export default function Post({ source, frontmatter }) {
   return (
     <>
       <HeadComponent frontmatter={frontmatter} />
 
-      <MDXRemote components={MDXComponents} {...source} />
+      <div className="container mx-auto px-5 my-10">
+        <Script
+          src="https://g1alexander.github.io/repo-card/repo-card.js"
+          strategy="beforeInteractive"
+        />
+
+        <MDXRemote components={MDXComponents} {...source} />
+      </div>
     </>
   );
 }
