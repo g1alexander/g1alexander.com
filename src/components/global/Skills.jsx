@@ -8,7 +8,6 @@ export function Skills({ skills }) {
         src={`https://img.shields.io/badge/-${name}-${color}?&logo=${logo}&logoColor=${logoColor}`}
         width={70}
         height={25}
-        className=""
       />
     </span>
   ));
