@@ -2,9 +2,7 @@ import { getAllFilesMetadata } from "@/lib/mdx";
 import { HeadComponent } from "@/components/global/Head";
 import { ProjectsPreview } from "@/components/projects/ProjectsPreview";
 
-export default function Home({ blog, projects }) {
-  let vue = "vue";
-  console.log(vue);
+export default function Home({ projects }) {
   return (
     <>
       <HeadComponent />
@@ -20,7 +18,7 @@ export default function Home({ blog, projects }) {
               </span>
             </h1>
           </div>
-          <ProjectsPreview />
+          <ProjectsPreview data={projects} />
         </div>
       </main>
     </>
@@ -28,11 +26,9 @@ export default function Home({ blog, projects }) {
 }
 
 export async function getStaticProps() {
-  const blog = await getAllFilesMetadata("blog");
   const projects = await getAllFilesMetadata("projects");
   return {
     props: {
-      blog,
       projects,
     },
   };
