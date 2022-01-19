@@ -68,15 +68,16 @@ export function HeaderDesktop() {
               </Link>
             </li>
             <li className="mr-3">
-              <Link href="/blog">
-                <a
-                  className={
-                    pathname === "/blog" ? "text-blue-500" : "active-link"
-                  }
-                >
-                  Blog
-                </a>
-              </Link>
+              <a
+                className={
+                  pathname === "/blog" ? "text-blue-500" : "active-link"
+                }
+                href="https://blog.g1alexander.com"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Blog
+              </a>
             </li>
           </ul>
         </nav>
