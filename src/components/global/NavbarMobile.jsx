@@ -54,9 +54,9 @@ export function NavbarMobile({ setView }) {
       <div className="w-full text-center font-bold">
         <a
           className="text-black-300 flex justify-center"
-          href=""
+          href="https://linkedin.com/in/g1alexander/"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           <Icon path={mdiLinkedin} size={1} />
           Linkedin
@@ -67,9 +67,9 @@ export function NavbarMobile({ setView }) {
       <div className="w-full text-center font-bold">
         <a
           className="text-black-300 flex justify-center"
-          href=""
+          href="https://github.com/g1alexander"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
           <Icon path={mdiGithub} size={1} />
           Github
