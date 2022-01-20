@@ -67,16 +67,28 @@ export function HeaderDesktop() {
                 </a>
               </Link>
             </li>
+            <li className="mr-5">
+              <a
+                className={
+                  pathname === "/blog" ? "text-blue-500" : "active-link"
+                }
+                href="https://dev.to/g1alexander/"
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                Blog
+              </a>
+            </li>
             <li className="mr-3">
               <a
                 className={
                   pathname === "/blog" ? "text-blue-500" : "active-link"
                 }
-                href="https://blog.g1alexander.com"
+                href="https://drive.google.com/file/d/1q1ebhUgKT3FtupZxazOLgW48gVMUJFb3/view"
                 target="_blank"
                 rel="noreferrer noopener"
               >
-                Blog
+                CV
               </a>
             </li>
           </ul>
