@@ -14,11 +14,22 @@ tags:
 
 <section>
 
-<SpanMe data={{ date: "2021/07/24", site: false }} />
+<SpanMe data={{ date: "2021/07/24", site: false, repo: false }} />
 <SpanMe
   data={{
     date: false,
     site: { name: "Demo", url: "https://cat-wiki-webpack.vercel.app/" },
+    repo: false,
+  }}
+/>
+<SpanMe
+  data={{
+    date: false,
+    site: false,
+    repo: {
+      name: "Repositorio",
+      url: "https://github.com/pawaydigital/CatWiki",
+    },
   }}
 />
 
@@ -48,7 +59,3 @@ En esta aplicación apliqué los conceptos avanzados de SPA (single-page applica
   src="https://res.cloudinary.com/dlgvxohur/image/upload/v1627482227/proyectos/CatWiki/g1alexander-foto-1.webp"
   alt="portada-cat-wiki"
 />
-
-### Contribuir al proyecto:
-
-<CardGithub data={{ username: "pawaydigital", repo: "CatWiki" }} />

@@ -1,8 +1,8 @@
-import { mdiLinkVariant } from "@mdi/js";
+import { mdiGit, mdiLinkVariant } from "@mdi/js";
 import Icon from "@mdi/react";
 
 export function SpanMe({ data }) {
-  const { date, site } = data;
+  const { date, site, repo } = data;
   return (
     <span className="text-blue-500 mr-5 flex mb-5">
       {date && new Date(date).toDateString("es-ES")}
@@ -17,6 +17,17 @@ export function SpanMe({ data }) {
           className="hover:underline"
         >
           {site.name}
+        </a>
+      )}
+      {repo.name && <Icon path={mdiGit} size={1} className="text-blue-500" />}
+      {repo && (
+        <a
+          href={repo.url}
+          target="_blank"
+          rel="noreferrer"
+          className="hover:underline"
+        >
+          {repo.name}
         </a>
       )}
     </span>

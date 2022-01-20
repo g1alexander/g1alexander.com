@@ -12,11 +12,22 @@ tags:
 
 <section>
 
-<SpanMe data={{ date: "2021-07-07", site: false }} />
+<SpanMe data={{ date: "2021-07-07", site: false, repo: false }} />
 <SpanMe
   data={{
     date: false,
     site: { name: "Demo", url: "https://adress-app.vercel.app/" },
+    repo: false,
+  }}
+/>
+<SpanMe
+  data={{
+    date: false,
+    site: false,
+    repo: {
+      name: "Repositorio",
+      url: "https://github.com/Felipev98/adressApp",
+    },
   }}
 />
 
@@ -42,7 +53,3 @@ La información de la IP o dominio se obtuvo a través de la API de IP Geolocati
   src="https://res.cloudinary.com/dlgvxohur/image/upload/v1627482318/proyectos/ip-address-tracker/g1alexander-foto-1.webp"
   alt="portada-ip-tracker"
 />
-
-### Contribuir al proyecto:
-
-<CardGithub data={{ username: "Felipev98", repo: "adressApp" }} />

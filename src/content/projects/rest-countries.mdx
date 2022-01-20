@@ -13,11 +13,22 @@ tags:
 
 <section>
 
-<SpanMe data={{ date: "2021/06/05", site: false }} />
+<SpanMe data={{ date: "2021/06/05", site: false, repo: false }} />
 <SpanMe
   data={{
     date: false,
     site: { name: "Demo", url: "https://rest-countries-vue.vercel.app/" },
+    repo: false,
+  }}
+/>
+<SpanMe
+  data={{
+    date: false,
+    site: false,
+    repo: {
+      name: "Repositorio",
+      url: "https://github.com/pawaydigital/rest-countries",
+    },
   }}
 />
 
@@ -45,7 +56,3 @@ Aparte de esto, se puede buscar un país en específico, filtrar los países por
   src="https://res.cloudinary.com/dlgvxohur/image/upload/v1627482790/proyectos/rest-countries/g1alexander-foto-1.webp"
   alt="portada-cat-wiki"
 />
-
-### Contribuir al proyecto:
-
-<CardGithub data={{ username: "pawaydigital", repo: "rest-countries" }} />
