@@ -43,14 +43,20 @@ export function HeaderDesktop() {
       </div>
       <header className="container mx-auto flex justify-between items-center px-5 pt-5">
         <div className="flex">
-          <Image src={Logo} width={50} height={50} alt="g1alexander" />
+          <Link href="/">
+            <a>
+              <Image src={Logo} width={50} height={50} alt="g1alexander" />
+            </a>
+          </Link>
         </div>
         <nav>
           <ul className="flex">
             <li className="mr-5">
               <Link href="/">
                 <a
-                  className={pathname === "/" ? "text-blue-500" : "active-link"}
+                  className={`hover:underline ${
+                    pathname === "/" ? "text-blue-500" : "active-link"
+                  }`}
                 >
                   Inicio
                 </a>
@@ -59,9 +65,9 @@ export function HeaderDesktop() {
             <li className="mr-5">
               <Link href="/sobre-mi">
                 <a
-                  className={
+                  className={`hover:underline ${
                     pathname === "/sobre-mi" ? "text-blue-500" : "active-link"
-                  }
+                  }`}
                 >
                   Sobre mí
                 </a>
@@ -69,9 +75,9 @@ export function HeaderDesktop() {
             </li>
             <li className="mr-5">
               <a
-                className={
+                className={`hover:underline ${
                   pathname === "/blog" ? "text-blue-500" : "active-link"
-                }
+                }`}
                 href="https://dev.to/g1alexander/"
                 target="_blank"
                 rel="noreferrer noopener"
@@ -81,9 +87,9 @@ export function HeaderDesktop() {
             </li>
             <li className="mr-3">
               <a
-                className={
+                className={`hover:underline ${
                   pathname === "/blog" ? "text-blue-500" : "active-link"
-                }
+                }`}
                 href="https://drive.google.com/file/d/1q1ebhUgKT3FtupZxazOLgW48gVMUJFb3/view"
                 target="_blank"
                 rel="noreferrer noopener"

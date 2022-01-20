@@ -32,3 +32,30 @@ export function getSocialMedia() {
     },
   ];
 }
+
+export const secciones = [
+  {
+    id: 1,
+    link: "/",
+    name: "Inicio",
+    http: false,
+  },
+  {
+    id: 2,
+    link: "/sobre-mi",
+    name: "Sobre mí",
+    http: false,
+  },
+  {
+    id: 3,
+    link: "https://dev.to/g1alexander/",
+    name: "Blog",
+    http: true,
+  },
+  {
+    id: 4,
+    link: "https://drive.google.com/file/d/1q1ebhUgKT3FtupZxazOLgW48gVMUJFb3/view",
+    name: "CV",
+    http: true,
+  },
+];
