@@ -5,7 +5,7 @@ import { exp, education } from "@/utils/getInfo";
 
 export default function SobreMi() {
   return (
-    <div className="container mx-auto px-5 my-10">
+    <div className="container mx-auto md:px-5 my-10">
       <section className="mb-12">
         <h2 className="text-xl font-bold my-6">Sobre mí 🤔</h2>
         <p className="mb-2">

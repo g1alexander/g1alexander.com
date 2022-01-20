@@ -10,7 +10,7 @@ export default function Home({ projects }) {
       <main>
         <div className="mx-auto xs:w-11/12 mds:w-9/12">
           <div className="w-3/4 mx-auto py-32">
-            <h1 className="text-4xl  text-center">
+            <h1 className="text-4xl md:text-center xs:leading-normal">
               Hola👋🏼 Soy Alexander Granados, desarrollador Front-end en{" "}
               <span className="font-light written">
                 <span className="text-tech-vue font-semibold">Vue</span>/

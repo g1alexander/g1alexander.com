@@ -18,7 +18,7 @@ export function ProjectsPreview({ data }) {
               <a>
                 <h3 className="my-2 font-bold text-lg">{project.title}</h3>
                 <p className="my-2">{project.description}</p>
-                <span className="text-blue-500 flex items-center font-semibold">
+                <span className="text-blue-500 hover:underline flex items-center font-semibold">
                   Ver más{" "}
                   <Icon path={mdiArrowRightThin} size={1} className="pt-1" />
                 </span>
