@@ -37,3 +37,39 @@ html::-webkit-scrollbar-track:active {
 .h-2px {
   height: 1px;
 }
+
+.grid-me {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-flow: dense;
+}
+
+.written {
+  display: inline-flex;
+  white-space: nowrap;
+  border-right: 1px solid #030303;
+  width: 9.5ch;
+  animation: typing 4.5s steps(25) infinite;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.border-personal {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+}
+
+.border-color-blue {
+  border: 1px solid #0333ff;
+}
+.border-color-gray {
+  border: 1px solid #e5e7eb;
+}

@@ -12,7 +12,7 @@ export function HeadComponent({ frontmatter }) {
       />
       <link rel="icon" href="/favicon.ico" />
       <link rel="manifest" href="/manifest.json" />
-      <meta name="theme-color" content="#DBF0EB" />
+      <meta name="theme-color" content="#ffffff" />
       <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png"></link>
 
       <meta charset="utf-8" />

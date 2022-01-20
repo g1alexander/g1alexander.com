@@ -8,7 +8,9 @@ export default function Post({ source, frontmatter }) {
     <>
       <HeadComponent frontmatter={frontmatter} />
 
-      <MDXRemote components={MDXComponents} {...source} />
+      <div className="container mx-auto md:px-5 my-10">
+        <MDXRemote components={MDXComponents} {...source} />
+      </div>
     </>
   );
 }

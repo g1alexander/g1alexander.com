@@ -7,6 +7,6 @@ module.exports = withPWA({
   },
   reactStrictMode: true,
   images: {
-    domains: ["res.cloudinary.com"],
+    domains: ["res.cloudinary.com", "img.shields.io"],
   },
 });
