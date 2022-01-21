@@ -33,8 +33,8 @@ export function Footer() {
                 <a
                   key={id}
                   href={link}
-                  target={http && "_blank"}
-                  rel={http && "noreferrer"}
+                  target={http ? "_blank" : undefined}
+                  rel="noreferrer"
                   className="hover:text-blue-500 my-1 hover:underline"
                 >
                   {name}
