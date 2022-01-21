@@ -48,12 +48,12 @@ export function HeadComponent({ frontmatter }) {
       <meta
         name="image"
         property="og:image"
-        content="https://res.cloudinary.com/dlgvxohur/image/upload/v1642726337/proyectos/cvecsb25dpzdoudqbaez.jpg"
+        content="https://res.cloudinary.com/dlgvxohur/image/upload/v1642734059/proyectos/peqvhnhihwtxa7asucnl.jpg"
       />
       <meta
         name="image"
         property="og:image"
-        content="https://res.cloudinary.com/dlgvxohur/image/upload/v1642726337/proyectos/cvecsb25dpzdoudqbaez.jpg"
+        content="https://res.cloudinary.com/dlgvxohur/image/upload/v1642734059/proyectos/peqvhnhihwtxa7asucnl.jpg"
       />
       <meta
         property="og:image:alt"
