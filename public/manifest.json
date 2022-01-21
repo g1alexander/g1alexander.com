@@ -1,7 +1,7 @@
 {
-  "short_name": "g1alexander",
-  "name": "g1alexander",
-  "description": "Portfolio and blog website by g1alexander",
+  "short_name": "Alexander Granados 👨🏻‍💻",
+  "name": "Alexander Granados 👨🏻‍💻",
+  "description": "Desarrollador Front-end en Vue/React, con experiencia en el desarrollo de aplicaciones web | Alexander Granados",
   "icons": [
     {
       "src": "/icons/android-36x36.png",
@@ -46,8 +46,8 @@
     }
   ],
   "start_url": "/",
-  "background_color": "#DBF0EB",
+  "background_color": "#ffffff",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#DBF0EB"
+  "theme_color": "#ffffff"
 }
