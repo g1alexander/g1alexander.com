@@ -1,3 +1,6 @@
+import { Header } from "@/components/global/Header";
+import { Footer } from "@/components/global/Footer";
+
 import { MDXRemote } from "next-mdx-remote";
 import { getFileBySlug, getFiles } from "@/lib/mdx";
 import { HeadComponent } from "@/components/global/Head";
@@ -6,11 +9,15 @@ import MDXComponents from "@/components/md/MDXComponent";
 export default function Post({ source, frontmatter }) {
   return (
     <>
+      <Header />
+
       <HeadComponent frontmatter={frontmatter} />
 
-      <div className="container mx-auto md:px-5 my-10">
+      <main className="container mx-auto md:px-5 my-10">
         <MDXRemote components={MDXComponents} {...source} />
-      </div>
+      </main>
+
+      <Footer />
     </>
   );
 }

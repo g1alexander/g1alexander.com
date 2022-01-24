@@ -1,3 +1,6 @@
+import { Header } from "@/components/global/Header";
+import { Footer } from "@/components/global/Footer";
+
 import { Skills } from "@/components/global/Skills";
 import { HeadComponent } from "@/components/global/Head";
 import { Info } from "@/components/sobre-mi/Info";
@@ -7,6 +10,8 @@ import { exp, education } from "@/utils/getInfo";
 export default function SobreMi() {
   return (
     <>
+      <Header />
+
       <HeadComponent frontmatter={{ title: "Sobre mí" }} />
 
       <main className="container mx-auto md:px-5 my-10">
@@ -14,18 +19,18 @@ export default function SobreMi() {
           <h2 className="text-xl font-bold my-6">Sobre mí 🤔</h2>
           <p className="mb-2">
             Soy desarrollador front-end trabajando en remoto para Agricapital
-            SAS de Medellin, Colombia. Estudié desarrollo de software en el ITP,
-            en los últimos 2 años he trabajando proyectos web tanto en la parte
-            frontend como backend, encontrando en ellos un mundo maravilloso en
-            el cual se pueden crear soluciones, dar vida a sitios y páginas web
-            a partir de un prototipo 🤓
+            SAS y actualmente vivo en Colombia🇨🇴. Estudié desarrollo de software
+            en el ITP, en los últimos 2 años he participado en proyectos web
+            tanto en la parte front-end como back-end, encontrando en ellos un
+            mundo maravilloso en el cual se pueden crear soluciones, dar vida a
+            sitios, aplicaciones y páginas web a partir de un prototipo 🤓
           </p>
           <p className="mb-2">
             En mi cuenta personal de GitHub 🖥 podéis encontrar todo mi trabajo
             personal que realizo tanto individual como en comunidad.
           </p>
           <p className="mb-2">
-            Tambien tengo un profundo interés por la filosofía estoica, la
+            También tengo un profundo interés por la filosofía estoica, la
             meditación y el minimalismo👋🏼🧘️
           </p>
         </section>
@@ -52,6 +57,8 @@ export default function SobreMi() {
           <Info data={education} />
         </section>
       </main>
+
+      <Footer />
     </>
   );
 }
