@@ -17,7 +17,7 @@ export function Toggle() {
           <Icon
             path={mdiWhiteBalanceSunny}
             size={1.1}
-            className="text-green-800 dark:text-green-300"
+            className="text-black-300 dark:text-dark-100"
           />
         </button>
       ) : (
@@ -25,7 +25,7 @@ export function Toggle() {
           <Icon
             path={mdiWeatherNight}
             size={1.1}
-            className="text-green-800 dark:text-green-300"
+            className="text-black-300 dark:text-dark-100"
           />
         </button>
       )}
