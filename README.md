@@ -17,4 +17,4 @@ Version 3 - Portafolio para proyectos profesionales
 
 ## Captura de pantalla
 
-![App Screenshot](https://res.cloudinary.com/dlgvxohur/image/upload/v1642726337/proyectos/cvecsb25dpzdoudqbaez.jpg)
+![App Screenshot](https://res.cloudinary.com/dlgvxohur/image/upload/v1642734059/proyectos/peqvhnhihwtxa7asucnl.jpg)
