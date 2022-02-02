@@ -2,13 +2,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import Logo from "@/static/logo.svg";
+import LogoDark from "@/static/logo-dark.svg";
 import Icon from "@mdi/react";
 import { Toggle } from "./Toggle";
 import { getSocialMedia } from "@/utils/getSocialMedia";
+import { GlobalContext } from "@/utils/getGlobalContext";
+import { useContext } from "react";
 
 export function HeaderDesktop() {
   const { pathname } = useRouter();
   const socialMedia = getSocialMedia();
+
+  const global = useContext(GlobalContext);
 
   return (
     <>
@@ -48,7 +53,12 @@ export function HeaderDesktop() {
         <div className="flex">
           <Link href="/">
             <a className="mr-5">
-              <Image src={Logo} width={50} height={50} alt="g1alexander" />
+              <Image
+                src={global.darkMode ? LogoDark : Logo}
+                width={50}
+                height={50}
+                alt="g1alexander"
+              />
             </a>
           </Link>
 
