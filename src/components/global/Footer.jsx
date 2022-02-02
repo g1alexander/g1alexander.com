@@ -1,10 +1,14 @@
 import { getSocialMedia, secciones } from "@/utils/getSocialMedia";
 import Image from "next/image";
 import Logo from "@/static/logo.svg";
+import LogoDark from "@/static/logo-dark.svg";
 import Link from "next/link";
+import { GlobalContext } from "@/utils/getGlobalContext";
+import { useContext } from "react";
 
 export function Footer() {
   const socialMedia = getSocialMedia();
+  const global = useContext(GlobalContext);
 
   return (
     <footer className="bg-white-400 dark:bg-dark-700 text-black-300 dark:text-dark-100">
@@ -50,7 +54,12 @@ export function Footer() {
                 <h3 className="my-2">Alexander Granados</h3>
                 <hr className="w-3/4 mx-auto" />
               </div>
-              <Image alt="g1alexander" src={Logo} width={40} height={40} />
+              <Image
+                alt="g1alexander"
+                src={global.darkMode ? LogoDark : Logo}
+                width={40}
+                height={40}
+              />
             </div>
           </a>
         </Link>
