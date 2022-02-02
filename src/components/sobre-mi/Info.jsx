@@ -8,11 +8,15 @@ export function Info({ data }) {
     ({ id, title, skills, description, img, reason, ubication, date }) => (
       <div className="md:flex w-full xs:mb-8 md:mb-0" key={id}>
         <section className="flex xs:justify-between xs:items-center md:items-start md:justify-start xs:mb-3 md:mb-0">
-          <div className="w-32">
+          <div className="w-32 font-light">
             <h4>{ubication}</h4>
-            <span className="text-white-700">
+            <span className="text-white-700 dark:text-dark-200">
               {date.start} {date.start && "-"}{" "}
-              <span className={`${reason.text && "text-blue-500"}`}>
+              <span
+                className={`${
+                  reason.text && "text-blue-500 dark:text-dark-blue"
+                }`}
+              >
                 {date.end}
               </span>
             </span>
@@ -20,7 +24,9 @@ export function Info({ data }) {
           <div className="text-center mx-5">
             <div
               className={`border-personal mx-auto py-1 ${
-                reason.border ? "border-color-blue" : "border-color-gray"
+                reason.border
+                  ? "border-color-blue dark:border-dark-blue"
+                  : "border-color-gray dark:border-dark-800"
               }`}
             >
               <Image
@@ -33,7 +39,7 @@ export function Info({ data }) {
             </div>
 
             {reason.hr && isDesktop && (
-              <hr className="w-1 border-0 border-l-2 h-28 mx-auto" />
+              <hr className="w-1 border-0 border-l-2 h-28 mx-auto border-white-500 dark:border-dark-800" />
             )}
           </div>
         </section>
@@ -41,7 +47,7 @@ export function Info({ data }) {
           <h3 className="font-semibold text-lg mb-2">
             {title.rol} {title.company && "-"}{" "}
             <a
-              className="text-blue-500 hover:underline"
+              className="text-blue-500 dark:text-dark-blue hover:underline"
               href={title.companyLink}
               rel="noopener noreferrer"
               target="_blank"
@@ -49,7 +55,7 @@ export function Info({ data }) {
               {title.company}
             </a>
           </h3>
-          <p>
+          <p className="font-light">
             {description}
             <br />
             <span className="font-bold">

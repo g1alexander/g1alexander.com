@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useContext } from "react";
+import { GlobalContext } from "@/utils/getGlobalContext";
 
 export function useDarkMode(state) {
-  const [darkMode, setDarkMode] = useState();
+  const global = useContext(GlobalContext);
 
   useEffect(() => {
     if (!state && state !== false && state !== true) {
@@ -11,23 +12,25 @@ export function useDarkMode(state) {
             window.matchMedia("(prefers-color-scheme: dark)").matches) === true
         ) {
           localStorage.setItem("dark-mode", "true");
-          setDarkMode(true);
+          global.update({ darkMode: true });
         } else {
           localStorage.setItem("dark-mode", "false");
-          setDarkMode(false);
+          global.update({ darkMode: false });
         }
       } else {
-        setDarkMode(JSON.parse(localStorage.getItem("dark-mode")));
+        global.update({
+          darkMode: JSON.parse(localStorage.getItem("dark-mode")),
+        });
       }
     } else {
       localStorage.setItem("dark-mode", state);
-      setDarkMode(state);
+      global.update({ darkMode: state });
     }
 
-    darkMode === true
+    global.darkMode === true
       ? document.body.classList.add("dark")
       : document.body.classList.remove("dark");
-  }, [state, darkMode]);
+  }, [state, global.darkMode, global.update]);
 
-  return darkMode;
+  return global.darkMode;
 }

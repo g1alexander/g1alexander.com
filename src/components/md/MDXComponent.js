@@ -8,10 +8,30 @@ const MDXComponent = {
   ImageMe,
   SpanMe,
   Iframe,
-  h1: (props) => <h1 className="font-bold text-3xl my-7" {...props}></h1>,
-  h3: (props) => <h3 className="font-bold text-lg mt-5" {...props}></h3>,
-  p: (props) => <p className="text-md my-3" {...props}></p>,
-  a: (props) => <a className="text-blue-500 hover:underline" {...props}></a>,
+  h1: (props) => (
+    <h1
+      className="font-bold text-black-300 dark:text-dark-100 text-3xl my-7"
+      {...props}
+    ></h1>
+  ),
+  h3: (props) => (
+    <h3
+      className="font-bold text-black-300 dark:text-dark-100 text-lg mt-5"
+      {...props}
+    ></h3>
+  ),
+  p: (props) => (
+    <p
+      className="text-md my-3 text-black-300 dark:text-dark-100 font-light"
+      {...props}
+    ></p>
+  ),
+  a: (props) => (
+    <a
+      className="text-blue-500 dark:text-dark-blue hover:underline"
+      {...props}
+    ></a>
+  ),
   section: (props) => <section className="flex gap-2" {...props}></section>,
 };
 

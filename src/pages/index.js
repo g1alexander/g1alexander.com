@@ -16,13 +16,13 @@ export default function Home({ projects }) {
 
       <main className="mx-auto xs:w-11/12 mds:w-9/12">
         <div className="w-3/4 mx-auto py-32">
-          <h1 className="text-4xl md:text-center xs:leading-normal">
+          <h1 className="text-4xl md:text-center xs:leading-normal text-black-300 dark:text-dark-100">
             Hola👋🏼 Soy{" "}
             <a
               href="https://linkedin.com/in/g1alexander/"
               target="_blank"
               rel="noreferrer noopener"
-              className="text-blue-500"
+              className="text-blue-500 dark:text-dark-blue"
             >
               Alexander Granados
             </a>

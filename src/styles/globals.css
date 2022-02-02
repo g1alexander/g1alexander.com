@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .active-link {
-  @apply text-black-300;
+  @apply text-black-300 dark:text-dark-100;
 }

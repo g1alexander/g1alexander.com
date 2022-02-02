@@ -7,7 +7,7 @@ export function Footer() {
   const socialMedia = getSocialMedia();
 
   return (
-    <footer className="bg-white-400">
+    <footer className="bg-white-400 dark:bg-dark-700 text-black-300 dark:text-dark-100">
       <section className="md:flex justify-between items-center container mx-auto md:px-5 py-10">
         <section className="flex xs:gap-7 md:gap-16">
           <div className="xs:mb-8 md:mb-0">
@@ -55,7 +55,7 @@ export function Footer() {
           </a>
         </Link>
       </section>
-      <div className="text-white-700 bg-white-500 text-center py-3">
+      <div className="text-white-700 dark:text-dark-200 bg-white-500 dark:bg-dark-800 text-center py-3">
         Copyright &copy; {new Date().getFullYear()} All rights reserved.
       </div>
     </footer>

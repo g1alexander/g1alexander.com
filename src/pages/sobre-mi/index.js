@@ -14,10 +14,12 @@ export default function SobreMi() {
 
       <HeadComponent frontmatter={{ title: "Sobre mí" }} />
 
-      <main className="container mx-auto md:px-5 my-10">
+      <main className="container mx-auto md:px-5 md:my-10 dark:text-dark-100">
         <section className="mb-12">
-          <h2 className="text-xl font-bold my-6">Sobre mí 🤔</h2>
-          <p className="mb-2">
+          <h2 className="text-xl font-bold xs:mb-6 xs:pt-6 md:pt-0 md:mb-0 md:my-6">
+            Sobre mí 🤔
+          </h2>
+          <p className="mb-2 font-normal">
             Soy desarrollador front-end trabajando en remoto para Agricapital
             SAS y actualmente vivo en Colombia🇨🇴. Estudié desarrollo de software
             en el ITP, en los últimos 2 años he participado en proyectos web
@@ -25,11 +27,11 @@ export default function SobreMi() {
             mundo maravilloso en el cual se pueden crear soluciones, dar vida a
             sitios, aplicaciones y páginas web a partir de un prototipo 🤓
           </p>
-          <p className="mb-2">
+          <p className="mb-2 font-normal">
             En mi cuenta personal de GitHub 🖥 podéis encontrar todo mi trabajo
             personal que realizo tanto individual como en comunidad.
           </p>
-          <p className="mb-2">
+          <p className="mb-2 font-normal">
             También tengo un profundo interés por la filosofía estoica, la
             meditación y el minimalismo👋🏼🧘️
           </p>

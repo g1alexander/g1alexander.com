@@ -13,7 +13,7 @@ export default function Post({ source, frontmatter }) {
 
       <HeadComponent frontmatter={frontmatter} />
 
-      <main className="container mx-auto md:px-5 my-10">
+      <main className="container mx-auto md:px-5 xs:mb-10 xs:pt-6 md:pt-0 md:mb-0 md:my-10">
         <MDXRemote components={MDXComponents} {...source} />
       </main>
 
