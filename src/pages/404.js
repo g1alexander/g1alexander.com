@@ -6,7 +6,9 @@ import Link from "next/link";
 // pages/404.js
 export default function Custom404() {
   return (
-    <article className={error.container_error}>
+    <article
+      className={`${error.container_error} bg-white-400 dark:bg-dark-700 text-black-300 dark:text-dark-100`}
+    >
       <div className={`${error.title} text-3xl`}>404</div>
       <div className={error.img}>
         <Image
