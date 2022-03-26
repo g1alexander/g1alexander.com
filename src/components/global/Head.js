@@ -1,6 +1,13 @@
 import Head from "next/head";
+import { useState } from "react";
+
+import { useDarkMode } from "@/hooks/useDarkMode";
 
 export function HeadComponent({ frontmatter }) {
+  const [darkMode, setDarkMode] = useState();
+
+  const state = useDarkMode(darkMode);
+
   return (
     <Head>
       <title>
@@ -12,7 +19,7 @@ export function HeadComponent({ frontmatter }) {
       />
       <link rel="icon" href="/favicon.ico" />
       <link rel="manifest" href="/manifest.json" />
-      <meta name="theme-color" content="#ffffff" />
+      <meta name="theme-color" content={!state ? "#ffffff" : "#181A1A"} />
       <link rel="apple-touch-icon" href="/icons/apple-touch-icon.png" />
 
       <meta charSet="utf-8" />

@@ -68,7 +68,7 @@ export const education = [
   {
     id: 2,
     title: {
-      rol: "Habilidades en programación",
+      rol: "Desarrollo de aplicaciones web",
       company: "Universidad Nacional de Colombia",
       companyLink: "https://unal.edu.co/",
     },

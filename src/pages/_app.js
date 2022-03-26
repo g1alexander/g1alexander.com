@@ -13,7 +13,7 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <div className="bg-white dark:bg-dark-600">
-      <NextNProgress color="#0333FF" />
+      <NextNProgress color={!darkMode.darkMode ? "#0333FF" : "#1B7FFF"} />
 
       <GlobalContext.Provider value={darkMode}>
         <Component {...pageProps} />

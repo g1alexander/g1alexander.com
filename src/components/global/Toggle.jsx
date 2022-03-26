@@ -11,9 +11,13 @@ export function Toggle() {
   return (
     <>
       {state ? (
-        <button onClick={handleDarkMode}>🌞</button>
+        <button className="px-2" onClick={handleDarkMode}>
+          🌞
+        </button>
       ) : (
-        <button onClick={handleDarkMode}>🌙</button>
+        <button className="px-2" onClick={handleDarkMode}>
+          🌙
+        </button>
       )}
     </>
   );
