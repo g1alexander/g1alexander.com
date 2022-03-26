@@ -29,13 +29,13 @@ export function HeaderMobile() {
             />
           </a>
         </Link>
-        <div className="flex">
+        <div className="flex gap-2">
           <Toggle />
-          <button onClick={() => setView(!view)}>
+          <button className="px-1" onClick={() => setView(!view)}>
             <Icon
               path={mdiDotsVertical}
               size={1.1}
-              className="text-black-300 dark:text-dark-100 ml-3"
+              className="text-black-300 dark:text-dark-100"
             />
           </button>
         </div>
