@@ -10,6 +10,7 @@ export function ImageMe({ src, alt }) {
         objectFit="cover"
         width={6}
         height={4}
+        priority={true}
       />
     </div>
   );
