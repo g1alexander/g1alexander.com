@@ -4,7 +4,7 @@ import { Footer } from "@/components/global/Footer";
 import { Skills } from "@/components/global/Skills";
 import { HeadComponent } from "@/components/global/Head";
 import { Info } from "@/components/sobre-mi/Info";
-import { skills, tools } from "@/utils/getSkills";
+import { skills, skills2, skills3, tools } from "@/utils/getSkills";
 import { exp, education } from "@/utils/getInfo";
 
 export default function SobreMi() {
@@ -41,10 +41,16 @@ export default function SobreMi() {
           <h2 className="text-xl font-bold my-6">
             Skills Tecnológicos & Herramientas 🛠
           </h2>
-          <div className="text-center my-5">
+          <div className="text-center my-5 flex">
             <Skills skills={skills} />
           </div>
-          <div className="text-center mb-5">
+          <div className="text-center my-5 flex">
+            <Skills skills={skills2} />
+          </div>
+          <div className="text-center my-5 flex">
+            <Skills skills={skills3} />
+          </div>
+          <div className="text-center mb-5 flex">
             <Skills skills={tools} />
           </div>
         </section>

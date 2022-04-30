@@ -27,6 +27,9 @@ export const skills = [
     logo: "GraphQl",
     logoColor: "ffffff",
   },
+];
+
+export const skills2 = [
   {
     id: 5,
     name: "VUE.JS",
@@ -55,6 +58,9 @@ export const skills = [
     logo: "nextdotjs",
     logoColor: "ffffff",
   },
+];
+
+export const skills3 = [
   {
     id: 9,
     name: "REACT.JS",
