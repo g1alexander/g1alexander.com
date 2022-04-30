@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 export function Skills({ skills }) {
-  console.log(skills);
+  // console.log(skills);
   return skills.map(({ id, name, logo, logoColor, color }) => (
     <span key={id} className="mr-2">
       <img
