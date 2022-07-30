@@ -93,19 +93,6 @@ export function HeaderDesktop() {
               </Link>
             </li>
             <li className="mr-5">
-              <Link href="/pawaydigital">
-                <a
-                  className={`hover:underline ${
-                    pathname === "/pawaydigital"
-                      ? "text-blue-500 dark:text-dark-blue"
-                      : "active-link"
-                  }`}
-                >
-                  Paway Digital
-                </a>
-              </Link>
-            </li>
-            <li className="mr-5">
               <a
                 className={`hover:underline ${
                   pathname === "/blog"

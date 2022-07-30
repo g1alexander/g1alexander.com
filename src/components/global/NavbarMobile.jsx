@@ -29,17 +29,6 @@ export function NavbarMobile({ setView }) {
 
       <div className="w-full text-center">
         <button onClick={() => setView(false)}>
-          <Link href="/pawaydigital">
-            <a className="text-black-300 dark:text-dark-100 font-bold">
-              Paway Digital
-            </a>
-          </Link>
-        </button>
-        <span className="h-2px my-4 w-full block bg-white-500 dark:bg-dark-800"></span>
-      </div>
-
-      <div className="w-full text-center">
-        <button onClick={() => setView(false)}>
           <a
             href="https://dev.to/g1alexander/"
             target="_blank"
