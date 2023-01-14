@@ -56,8 +56,13 @@ export const education = [
     },
     description:
       "De esta manera es como he aprendido la mayoría de habilidades que he empleado en mi día a día. En este momento me encuentro aprendiendo: ",
-    skills: ["react avanzado", "css avanzado", "inglés conversacional"],
-    img: "https://res.cloudinary.com/dlgvxohur/image/upload/v1641951749/proyectos/g1alexander.jpg",
+    skills: [
+      "pwa",
+      "design system",
+      "patrones de diseño",
+      "inglés conversacional",
+    ],
+    img: "https://res.cloudinary.com/dlgvxohur/image/upload/v1673736841/proyectos/g1alexander.jpg",
     reason: { hr: true, border: true, text: true },
     ubication: "Cualquier lugar",
     date: {
