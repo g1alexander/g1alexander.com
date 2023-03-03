@@ -33,6 +33,12 @@ const MDXComponent = {
     ></a>
   ),
   section: (props) => <section className="flex gap-2" {...props}></section>,
+  ul: (props) => (
+    <ul
+      className="list-disc ml-5  text-black-300 dark:text-dark-100 font-light text-md"
+      {...props}
+    ></ul>
+  ),
 };
 
 export default MDXComponent;
