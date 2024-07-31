@@ -8,7 +8,7 @@ export const exp = [
     },
     description:
       "Trabajo en Agricapital como desarrollador front-end en Vue. Me incorporé en septiembre de 2021 como empleado a tiempo completo. Mi equipo tiene sede en Medellín, sin embargo trabajamos de forma remota. En este momento me encuentro aprendiendo:",
-    skills: ["testing", "TS avanzado", "arquitectura front-end"],
+    skills: ["liderazgo", "cloud", "arquitectura front-end"],
     img: "https://res.cloudinary.com/dlgvxohur/image/upload/v1642282929/proyectos/agricapital.jpg",
     reason: { hr: true, border: true, text: true },
     ubication: "Medellín, Col & Mocoa, Col",
@@ -57,7 +57,7 @@ export const education = [
     description:
       "De esta manera es como he aprendido la mayoría de habilidades que he empleado en mi día a día. En este momento me encuentro aprendiendo: ",
     skills: [
-      "pwa",
+      "arquitectura front-end",
       "design system",
       "patrones de diseño",
       "inglés conversacional",

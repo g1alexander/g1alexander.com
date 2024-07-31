@@ -1,31 +1,31 @@
 export const skills = [
   {
     id: 1,
-    name: "JAVASCRIPT",
-    color: "yellow",
-    logo: "Javascript",
-    logoColor: "ffffff",
-  },
-  {
-    id: 2,
     name: "TYPESCRIPT",
     color: "3178C6",
     logo: "TypeScript",
     logoColor: "ffffff",
   },
   {
-    id: 3,
+    id: 2,
     name: "JEST.JS",
     color: "C21325",
     logo: "Jest",
     logoColor: "ffffff",
   },
   {
+    id: 3,
+    name: "AMAZON_AWS",
+    color: "FF9900",
+    logo: "amazondotaws",
+    logoColor: "white",
+  },
+  {
     id: 4,
-    name: "GRAPHQL",
-    color: "E10098",
-    logo: "GraphQl",
-    logoColor: "ffffff",
+    name: "VITE",
+    color: "B73BFE",
+    logo: "vite",
+    logoColor: "FFD62E",
   },
 ];
 

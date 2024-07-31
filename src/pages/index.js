@@ -43,6 +43,8 @@ export default function Home({ projects }) {
 
 export async function getStaticProps() {
   const projects = await getAllFilesMetadata("projects");
+  projects.sort((a, b) => new Date(b.date) - new Date(a.date));
+
   return {
     props: {
       projects,
