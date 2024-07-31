@@ -9,7 +9,7 @@ export function ProjectsPreview({ data }) {
         Proyectos ‍💻
       </h2>
       <hr className="my-6 border-white-500 dark:border-dark-800" />
-      <section className="md:flex w-full mt-7 mb-10 grid-me">
+      <section className="w-full mt-7 mb-10 grid-me">
         {data.map((project) => (
           <div key={project.title} className="mb-5">
             <span className="flex gap-1 text-white-700 dark:text-dark-200">
